@@ -1,70 +1,60 @@
 {
-  "name": "angular2-draggable-github",
-  "version": "1.1.0",
-  "license": "MIT",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve --port=4203",
-    "build": "ng build --prod --base-href ./",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "build:lib": "ng-packagr",
-    "link:lib": "rimraf node_modules/angular2-draggable && cpr dist/lib node_modules/angular2-draggable",
-    "update:md": "cpr README.md dist/lib/README.md -o",
-    "dist": "run-s build:lib update:md",
-    "release": "run-s build:lib update:md link:lib build:doc",
-    "demo": "run-s build:lib link:lib start",
-    "build:doc": "run-s build compodoc",
-    "compodoc": "compodoc -p lib/src/tsconfig.lib.json -d dist/docs/api-doc --theme stripe",
-    "serve:doc": "compodoc -p lib/src/tsconfig.lib.json -s"
+  "_from": "angular2-draggable@^1.4.2",
+  "_id": "angular2-draggable@1.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-UTR09nsL7MS5zeJh9jPkfvCy1VNqxuYXbqo2jYkenx0iU9NV1oPeuPr9Bl43eC+zKokV2IFxBC37JelFPUgwcA==",
+  "_location": "/angular2-draggable",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "angular2-draggable@^1.4.2",
+    "name": "angular2-draggable",
+    "escapedName": "angular2-draggable",
+    "rawSpec": "^1.4.2",
+    "saveSpec": null,
+    "fetchSpec": "^1.4.2"
   },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "5.2.10",
-    "@angular/common": "5.2.10",
-    "@angular/compiler": "5.2.10",
-    "@angular/core": "5.2.10",
-    "@angular/forms": "5.2.10",
-    "@angular/http": "5.2.10",
-    "@angular/platform-browser": "5.2.10",
-    "@angular/platform-browser-dynamic": "5.2.10",
-    "@angular/router": "5.2.10",
-    "classlist.js": "^1.1.20150312",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.5.2",
-    "web-animations-js": "^2.3.1",
-    "zone.js": "^0.8.14"
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular2-draggable/-/angular2-draggable-1.4.2.tgz",
+  "_shasum": "cb3c601e1398ebeac6e5399b55103d01e94f1175",
+  "_spec": "angular2-draggable@^1.4.2",
+  "_where": "/Users/j/Documents/Code/iteleport/iTeleportBeta/src/client",
+  "author": {
+    "name": "Xie, Ziyu",
+    "email": "ziyu.xie@foxmail.com"
   },
-  "devDependencies": {
-    "@angular/cli": "1.6.8",
-    "@angular/compiler-cli": "5.2.10",
-    "@angular/language-service": "5.2.10",
-    "@compodoc/compodoc": "^1.0.4",
-    "@types/jasmine": "~2.5.53",
-    "@types/jasminewd2": "~2.0.2",
-    "@types/node": "~6.0.60",
-    "@types/prismjs": "^1.6.5",
-    "bootstrap": "4.0.0-beta.2",
-    "codelyzer": "^4.0.1",
-    "cpr": "^3.0.1",
-    "font-awesome": "^4.7.0",
-    "jasmine-core": "~2.6.2",
-    "jasmine-spec-reporter": "~4.1.0",
-    "karma": "~1.7.0",
-    "karma-chrome-launcher": "~2.1.1",
-    "karma-cli": "~1.0.1",
-    "karma-coverage-istanbul-reporter": "^1.2.1",
-    "karma-jasmine": "~1.1.0",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "ng-packagr": "^1.6.0",
-    "ngx-bootstrap": "^2.0.0-beta.8",
-    "ngx-markdown": "^1.4.0",
-    "npm-run-all": "^4.1.2",
-    "protractor": "~5.1.2",
-    "rimraf": "^2.6.2",
-    "ts-node": "~3.2.0",
-    "tslint": "~5.7.0",
-    "typescript": "~2.4.2"
-  }
+  "bugs": {
+    "url": "https://github.com/xieziyu/angular2-draggable/issues",
+    "email": "xieziyu@foxmail.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Angular directive that makes the DOM element draggable",
+  "es2015": "angular2-draggable.js",
+  "homepage": "https://github.com/xieziyu/angular2-draggable#readme",
+  "keywords": [
+    "angular",
+    "4",
+    "5",
+    "draggable",
+    "ng"
+  ],
+  "main": "bundles/angular2-draggable.umd.js",
+  "metadata": "angular2-draggable.metadata.json",
+  "module": "angular2-draggable.es5.js",
+  "name": "angular2-draggable",
+  "peerDependencies": {
+    "@angular/common": ">=4.0.0",
+    "@angular/compiler": ">=4.0.0",
+    "@angular/core": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xieziyu/angular2-draggable.git"
+  },
+  "typings": "angular2-draggable.d.ts",
+  "version": "1.4.2"
 }
