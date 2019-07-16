@@ -9,7 +9,7 @@ class Position implements IPosition {
   constructor(public x: number, public y: number) { }
 
   static fromEvent(e: MouseEvent | TouchEvent) {
-    if (e instanceof MouseEvent) {
+    if (!e.changedTouches) {
       return new Position(e.clientX, e.clientY);
     } else {
       return new Position(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
@@ -337,7 +337,7 @@ export class AngularDraggableDirective implements OnInit, OnChanges {
   @HostListener('touchstart', ['$event'])
   onMouseDown(event: MouseEvent | TouchEvent) {
     // 1. skip right click;
-    if (event instanceof MouseEvent && event.button === 2) {
+    if (!event.changedTouches && event.button === 2) {
       return;
     }
     // 2. if handle is set, the element can only be moved by handle
