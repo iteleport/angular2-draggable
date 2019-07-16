@@ -13,7 +13,7 @@ var Position = (function () {
      * @return {?}
      */
     Position.fromEvent = function (e) {
-        if (e instanceof MouseEvent) {
+        if (!e.changedTouches) {
             return new Position(e.clientX, e.clientY);
         }
         else {
@@ -368,7 +368,7 @@ var AngularDraggableDirective = (function () {
      */
     AngularDraggableDirective.prototype.onMouseDown = function (event) {
         // 1. skip right click;
-        if (event instanceof MouseEvent && event.button === 2) {
+        if (!event.changedTouches && event.button === 2) {
             return;
         }
         // 2. if handle is set, the element can only be moved by handle
